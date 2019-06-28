@@ -34,6 +34,6 @@ namespace NoCableLauncher.CoreAudioApi
             fmtid = guid;
             pid = Pid;
         }
-    }; 
+    } 
 
 }

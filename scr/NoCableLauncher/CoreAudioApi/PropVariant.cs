@@ -23,6 +23,7 @@
 using System;
 using System.Runtime.InteropServices;
 using NoCableLauncher.CoreAudioApi.Interfaces;
+using FILETIME = System.Runtime.InteropServices.ComTypes.FILETIME;
 
 namespace NoCableLauncher.CoreAudioApi
 {
@@ -47,7 +48,7 @@ namespace NoCableLauncher.CoreAudioApi
         [FieldOffset(8)] DateTime date;
         [FieldOffset(8)] bool boolVal;
         [FieldOffset(8)] int scode;
-        [FieldOffset(8)] System.Runtime.InteropServices.ComTypes.FILETIME filetime;
+        [FieldOffset(8)] FILETIME filetime;
         [FieldOffset(8)] IntPtr everything_else;
 
         //I'm sure there is a more efficient way to do this but this works ..for now..
@@ -81,7 +82,7 @@ namespace NoCableLauncher.CoreAudioApi
                 case VarEnum.VT_BLOB:
                     return GetBlob();
             }
-            return "FIXME Type = " + ve.ToString();
+            return "FIXME Type = " + ve;
         }
     } 
 }

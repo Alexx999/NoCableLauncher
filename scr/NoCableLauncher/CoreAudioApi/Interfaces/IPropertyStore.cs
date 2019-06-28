@@ -20,7 +20,6 @@
   3. This notice may not be removed or altered from any source distribution.
 */
 
-using System;
 using System.Runtime.InteropServices;
 
 namespace NoCableLauncher.CoreAudioApi.Interfaces
@@ -30,7 +29,7 @@ namespace NoCableLauncher.CoreAudioApi.Interfaces
     internal interface IPropertyStore  
     {
         [PreserveSig]
-        int GetCount( out Int32 count);
+        int GetCount( out int count);
         [PreserveSig]
         int GetAt( int iProp, out PropertyKey pkey);
         [PreserveSig]
@@ -39,5 +38,5 @@ namespace NoCableLauncher.CoreAudioApi.Interfaces
         int SetValue(ref PropertyKey key, ref PropVariant propvar);
         [PreserveSig]
         int Commit( );
-    };
+    }
 }

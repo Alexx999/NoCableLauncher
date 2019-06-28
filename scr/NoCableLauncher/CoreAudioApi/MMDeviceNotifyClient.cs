@@ -17,7 +17,6 @@
 // THE SOFTWARE.
 // -----------------------------------------
 
-using System;
 using NoCableLauncher.CoreAudioApi.Interfaces;
 
 namespace NoCableLauncher.CoreAudioApi
